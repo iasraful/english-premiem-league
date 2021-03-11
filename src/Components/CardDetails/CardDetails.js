@@ -13,7 +13,7 @@ const CardDetails = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setDetails(data.teams[0]));
-  }, []);
+  }, [idTeam]);
 
   const {
     strTeamLogo,
@@ -64,7 +64,7 @@ const CardDetails = () => {
                 ? "https://www.dreamteamfc.com/c/wp-content/uploads/sites/4/2017/06/qatar-football.jpg?strip=all&w=750&quality=100"
                 : "https://www.thesun.co.uk/wp-content/uploads/2017/08/nintchdbpict000343303326.jpg"
             }
-            alt=""
+            alt="team banner"
           />
         </div>
       </div>

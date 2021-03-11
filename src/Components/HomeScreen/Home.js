@@ -12,7 +12,7 @@ const Home = () => {
       .then((data) => {
         setTeams(data.teams.slice(0, 12));
       });
-  }, []);
+  }, [teams]);
 
   return (
     <div>
